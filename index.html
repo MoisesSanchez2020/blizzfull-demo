@@ -721,6 +721,215 @@
       </div>
     </section>
 
+    <section class="editorHero" id="talk">
+      <div
+        class="editorBg"
+        role="img"
+        aria-label="Sleeping baby background"
+      ></div>
+
+      <div class="wrap editorGrid">
+        <div class="editorText">
+          <h2>Let’s talk about your child’s sleep.</h2>
+
+          <p class="muted">
+            I know this can feel like a tender topic — it brings up guilt,
+            doubt, and a lot of confusion.
+          </p>
+
+          <p>
+            <strong
+              >Maybe you’ve tried and failed to help your child sleep</strong
+            >, and now you’re exhausted and frustrated. You’ve been searching
+            everywhere — books, websites, podcasts — hoping to find the right
+            answers.
+          </p>
+
+          <p><strong>All of your searching brought you here.</strong></p>
+          <p>
+            <strong
+              >Here’s the good news: you’ve come to the right place.</strong
+            >
+          </p>
+
+          <p class="muted">
+            This is a caring, no-judgment space for you to get accurate, proven
+            guidance that helps your family enjoy calm, restful sleep.
+          </p>
+
+          <div class="editorBig">
+            <p>
+              No, your child doesn’t need to
+              <span class="italic">“cry-it-out.”</span>
+            </p>
+            <p>
+              No, this is <span class="italic">not</span> a one-size-fits-all
+              solution.
+            </p>
+          </div>
+
+          <p class="muted">
+            What you both need is a gentle, structured plan that fits your
+            child’s age, temperament, and your family’s values.
+          </p>
+
+          <p class="closing">
+            <strong>I know I can help you.</strong>
+          </p>
+
+          <div class="editorActions">
+            <a class="btn primary" href="#intake">Start Intake</a>
+            <a class="btn" href="#services">View Services</a>
+          </div>
+        </div>
+
+        <div class="editorSpacer"></div>
+      </div>
+    </section>
+    <style>
+      /* ===== Editorial Hero Section ===== */
+      .editorHero {
+        position: relative;
+        padding: 96px 0;
+        overflow: hidden;
+        background: #f7faff;
+      }
+
+      .editorHero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          90deg,
+          rgba(245, 249, 255, 0.92) 0%,
+          rgba(245, 249, 255, 0.85) 45%,
+          rgba(245, 249, 255, 0.35) 75%,
+          rgba(245, 249, 255, 0.1) 100%
+        );
+        z-index: 1;
+      }
+
+      .editorBg {
+        position: absolute;
+        inset: 0;
+        background-image: url("assets/image/baby-4.jpg");
+        background-size: cover;
+        background-position: center right;
+
+        filter: blur(12px) brightness(0.85);
+        transform: scale(1.1);
+        z-index: 0;
+      }
+
+      /* Soft overlay to keep text readable */
+      .editorHero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 0.96) 0%,
+          rgba(255, 255, 255, 0.92) 42%,
+          rgba(255, 255, 255, 0.35) 72%,
+          rgba(255, 255, 255, 0.05) 100%
+        );
+      }
+
+      /* Layout */
+      .editorGrid {
+        position: relative;
+        z-index: 2;
+        display: grid;
+        grid-template-columns: minmax(320px, 560px) 1fr;
+        gap: 28px;
+        align-items: start;
+      }
+
+      .editorText h2 {
+        font-family: Fraunces, serif;
+        font-size: 54px;
+        line-height: 1.05;
+        letter-spacing: -0.02em;
+        color: #20324a;
+        margin: 0 0 18px;
+      }
+
+      .editorText p {
+        margin: 0 0 14px;
+        color: #33455d;
+        line-height: 1.85;
+        font-size: 16px;
+      }
+
+      .editorText p.muted {
+        color: #5b6b7f;
+      }
+
+      .editorBig {
+        margin: 18px 0 14px;
+        padding-left: 2px;
+      }
+
+      .editorBig p {
+        font-size: 30px;
+        line-height: 1.15;
+        margin: 0 0 10px;
+        font-weight: 800;
+        color: #2c3e55;
+      }
+
+      .editorBig .italic {
+        font-style: italic;
+        font-weight: 800;
+      }
+
+      .editorText .closing {
+        margin-top: 10px;
+        font-size: 20px;
+        color: #2f6fb6;
+      }
+
+      .editorActions {
+        margin-top: 18px;
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      /* right column keeps photo visible */
+      .editorSpacer {
+        min-height: 420px;
+      }
+
+      /* ===== Responsive ===== */
+      @media (max-width: 980px) {
+        .editorHero {
+          padding: 72px 0;
+        }
+
+        .editorGrid {
+          grid-template-columns: 1fr;
+        }
+
+        .editorSpacer {
+          display: none;
+        }
+
+        /* On mobile, dim the whole background more for readability */
+        .editorHero::before {
+          background: rgba(255, 255, 255, 0.9);
+        }
+
+        .editorText h2 {
+          font-size: 40px;
+        }
+
+        .editorBig p {
+          font-size: 22px;
+        }
+      }
+    </style>
+
     <!-- INTAKE V2 -->
     <section id="intake" class="intakeV2">
       <div class="wrap">
